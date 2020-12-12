@@ -94,10 +94,12 @@ header nav ul li a {
     display: flex;
     width: 100%;
     justify-content: center;
+    grid-gap: 20px;
 }
 
 .grid-container {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -108,5 +110,9 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: right;
+    vertical-align: bottom;
 }
+
+.image-1 {
+    background-image: url(./images/run-buddy.PNG);
