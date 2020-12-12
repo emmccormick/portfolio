@@ -89,3 +89,24 @@ header nav ul li a {
 .content {
     padding: 20px;
 }
+
+.grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-item {
+    padding: 15px 0;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
