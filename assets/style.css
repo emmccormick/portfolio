@@ -99,16 +99,18 @@ header nav ul li a {
 
 .grid-container {
     display: flex;
+    padding: 20px 0;
     width: 100%;
     justify-content: center;
     grid-gap: 10px;
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 10vw);
+    grid-template-rows: auto;
+
 }
 
 .grid-item {
-    padding: 20px 0;
+    padding: 0;
     border: 2px solid var(--secondary-color);
     display: flex;
     align-items: center;
@@ -116,45 +118,47 @@ header nav ul li a {
     position: relative;
 }
 
+
 .image-1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    background-image: url(./images/run-buddy.PNG);
-    background-size: cover;
-    background-position: center;
-}
-
-.image-1 img {
-    object-fit: cover;
-    display: block;
+         
     height: 100%;
     width: 100%;
+    object-fit: fill;
+    display: block;
 }
 
 .image-2 {
     grid-column: 3 / span 1;
     grid-row: 1 / span 1;
-    background-image: url(./images/horiseon.png);
-    background-size: cover;
-    background-position: center;
+         
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    display: block;
 }
 
-.proj-3 {
+.image-3 {
     grid-column: 3 / span 1;
     grid-row: 2 / span 1;
-    background-image: url(./images/hero-pic.jpg);
 }
 
-.proj-4 {
+.image-4 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    background-image: url(./images/hero-pic.jpg);
 }
 
-.proj-5 {
+.image-5 {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
-    background-image: url(./images/hero-pic.jpg);
+}
+
+.grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    display: block;
 }
 
 a:link {
@@ -167,4 +171,26 @@ span {
     justify-items: left;
     position: absolute;
     bottom: 15px;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+section ul li a {
+    margin: 0 20px;
+    font-weight: lighter;
+    font-size: 2.5vw;
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid pink;
+}
+
+footer {
+    margin: 50px 0 0 0;
+    text-align: right;
+    font-size: 14px;
 }
